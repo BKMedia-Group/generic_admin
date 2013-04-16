@@ -1,0 +1,10 @@
+%h1 Manage Users
+%p= link_to 'Create User', new_user_path, class: 'btn btn-primary'
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th Name
+      %th Email
+      %th Admin
+      %th
+  %tbody= render @users

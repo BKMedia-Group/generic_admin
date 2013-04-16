@@ -1,0 +1,22 @@
+= form_for @user do |f|
+  = render 'shared/error_messages', object: f.object
+  %p
+    = f.label :name
+    = f.text_field :name
+  %p
+    = f.label :email
+    = f.text_field :email
+  %p
+    = f.label :password
+    = f.password_field :password
+  %p
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
+  %p
+    %label.checkbox
+      = f.check_box :admin
+      Admin
+
+  %p
+    = f.submit f.object.new_record? ? 'Create User' : 'Update User'
+    = link_to "Cancel", users_path

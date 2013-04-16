@@ -1,0 +1,7 @@
+%tr
+  %td= user.name
+  %td= user.email
+  %td= user.admin ? 'Yes' : 'No'
+  %td
+    = link_to 'Edit', edit_user_path(user), class: 'btn btn-small'
+    = link_to 'Delete', edit_user_path(user), class: 'btn btn-danger btn-small', data: {confirm: 'You Sure?'}
