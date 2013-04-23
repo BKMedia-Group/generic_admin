@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    generic_admin (0.0.1)
+    generic_admin (0.0.2)
       bcrypt-ruby
       rails (~> 3.2.13)
 
